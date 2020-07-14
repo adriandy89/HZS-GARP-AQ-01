@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      HZS-GARP-AQ-01
+      <div style="text-align: right; float: right;">
+        <ion-label style="text-align: right; margin-right: 15px;" (click)="onClick()">{{lang}}</ion-label>
+        <ion-icon name="information-circle-outline" [routerLink]="['/info', lang]" routerLinkActive="router-link-active"></ion-icon>
+      </div>
+    </ion-title>    
+  </ion-toolbar>  
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+  <!-- Default Refresher -->
+    <ion-refresher slot="fixed"  pullMin="100" pullMax="200" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  <div id="container" style="width:100%;height:100%">
+    <ion-list  style="width:100%;height:100%">
+      <iframe style="width:100%;height:100%" (load)="hideLoader()" #iframe  scrolling="yes" ></iframe>
+    </ion-list>    
+  </div>  
+</ion-content>

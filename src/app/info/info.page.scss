@@ -1,0 +1,32 @@
+#container {
+    text-align: center;
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;  
+    color: #8c8c8c;  
+    margin: 0;
+    text-align: justify;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+
+  .card {
+      margin: 10px auto;
+      padding: 5px;
+      border-radius: 10px;
+  }
+  .hrSmall{
+    width: 80%;
+    height: 2px; 
+    background: radial-gradient(orange, white); 
+    margin: 0 auto;
+  }

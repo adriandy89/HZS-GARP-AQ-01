@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>    
+    <ion-title>
+      <ion-icon name="arrow-back-outline" style="margin-right:15px;" [routerLink]="['/']" routerLinkActive="router-link-active" ></ion-icon>
+      {{info}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div id="container">
+    <ion-grid>
+      <ion-card class="card">
+        <ion-row>
+          <ion-col>
+            <h1>{{info}}</h1>
+            <hr class="hrSmall">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>            
+            <p style="text-align: left; margin: 10px auto; padding-left: 5%;">
+              <ion-icon name="person-circle-outline"></ion-icon>{{name}}: Jaime Rafael Duardo Yanes<br>
+              <ion-icon name="call-outline"></ion-icon> {{phone}}: +53 58527396<br>
+              <ion-icon name="mail-outline"></ion-icon> {{email}}: jduardo2704@gmail.com<br><br>              
+            </p>
+            <ion-img src="/assets/info.gif" style="max-width: 80%; border-radius: 4px; margin: 0 auto;"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-grid>
+  </div>
+
+</ion-content>
